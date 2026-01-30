@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>TẾT NGUYÊN ĐÁN - TẾT CỦA ĐOÀN VIÊN</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<header class="header-top">
+	<div class="header-left">
+		<!-- logo placeholder -->
+	</div>
+	<div class="header-right">
+		<nav class="nav-inline">
+			<ul>
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="mon_an.html">Món ăn</a></li>
+				<li><a href="truyen_thong.html">Truyền thống nổi tiếng</a></li>
+				<li><a href="dang_ki.html">Đăng ký</a></li>
+			</ul>
+		</nav>
+		<div class="site-title">TẾT NGUYÊN ĐÁN</div>
+	</div>
+</header>
+
+<main class="container">
+
+	<section class="banner-strip">
+		<!-- If you add a banner image as images/banner1.jpg it will be displayed here -->
+		<div class="banner-placeholder">
+			<img src="images/banner1.jpg" alt="Banner Tết" class="banner-img">
+		</div>
+	</section>
+
+	<section class="calendar-box">
+		<h3>Lịch Tết Âm Lịch 2026</h3>
+		<div class="tet-date">
+			<div class="date-number">17</div>
+			<div class="date-meta">
+				<div class="month">02</div>
+				<div class="year">2026</div>
+			</div>
+		</div>
+		<p class="muted"><strong>Mùng 1 Tết — Ngày đầu tiên của năm con Giáp</strong></p>
+	</section>
+
+	<section class="content">
+		<h2>Vì sao Tết quan trọng?</h2>
+		<p>Tết Nguyên Đán không chỉ là dịp đón năm mới mà còn là thời điểm gia đình quây quần, tưởng nhớ tổ tiên, và trao gửi lời chúc tốt lành. Trang web này giới thiệu các nét văn hoá, truyền thống và gợi ý hoạt động để bạn tổ chức một cái Tết ấm áp và ý nghĩa.</p>
+	</section>
+
+
+</main>
+
+	<!-- Tabbed content: Tất cả / Ẩm thực / Nghệ thuật / Hoạt động -->
+	<section class="tabs container">
+		<div class="tab-buttons" role="tablist" aria-label="Chọn thể loại">
+			<button class="tab-button active" data-target="tab-all" role="tab" aria-selected="true">Tất cả</button>
+			<button class="tab-button" data-target="tab-food" role="tab">Ẩm thực</button>
+			<button class="tab-button" data-target="tab-culture" role="tab">Nghệ thuật</button>
+			<button class="tab-button" data-target="tab-activities" role="tab">Hoạt động</button>
+		</div>
+		<div class="tab-panels">
+			<div id="tab-all" class="tab-panel active" role="tabpanel">
+				<div class="grid">
+					<article class="card">
+						<img src="images/banh_chung.jpg" alt="Bánh chưng" class="card-img">
+						<h3>Ẩm thực Tết</h3>
+						<p class="muted">Bánh chưng, thịt kho tàu và mâm cơm đoàn viên.</p>
+					</article>
+					<article class="card">
+						<img src="images/lan_dau.jpg" alt="Múa lân" class="card-img">
+						<h3>Nghệ thuật</h3>
+						<p class="muted">Múa lân, thư pháp và biểu diễn âm nhạc truyền thống.</p>
+					</article>
+					<article class="card">
+						<img src="images/duong_pho.jpg" alt="Hoạt động đoàn viên" class="card-img">
+						<h3>Hoạt động</h3>
+						<p class="muted">Hội làng, trò chơi dân gian và chương trình thiện nguyện.</p>
+					</article>
+				</div>
+			</div>
+
+			<div id="tab-food" class="tab-panel" role="tabpanel" hidden>
+				<div class="grid">
+					<article class="card">
+						<img src="images/banh_chung.jpg" alt="Bánh chưng" class="card-img">
+						<h3>Bánh chưng</h3>
+						<p class="muted">Biểu tượng của đất trời, gói trong lá dong.</p>
+					</article>
+				</div>
+			</div>
+
+			<div id="tab-culture" class="tab-panel" role="tabpanel" hidden>
+				<div class="grid">
+					<article class="card">
+						<img src="images/lan_dau.jpg" alt="Múa lân" class="card-img">
+						<h3>Múa lân & thư pháp</h3>
+						<p class="muted">Không khí lễ hội và lời chúc năm mới.</p>
+					</article>
+				</div>
+			</div>
+
+			<div id="tab-activities" class="tab-panel" role="tabpanel" hidden>
+				<div class="grid">
+					<article class="card">
+						<img src="images/duong_pho.jpg" alt="Hoạt động đoàn viên" class="card-img">
+						<h3>Hoạt động & tình nguyện</h3>
+						<p class="muted">Gắn kết cộng đồng qua các chương trình Tết.</p>
+					</article>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Video section: small clip about Tet -->
+	<section class="video-section container">
+		<h2>Video: Không khí Tết</h2>
+		<div class="video-wrapper">
+			<video controls width="720" poster="images/video_poster.jpg">
+				<source src="videos/tet_clip.mp4" type="video/mp4">
+				Trình duyệt của bạn không hỗ trợ thẻ video.
+			</video>
+			<p class="muted">Đặt file video tại <code>videos/tet_clip.mp4</code>. Nếu cần, đổi tên file theo placeholder.</p>
+		</div>
+	</section>
+
+	<script>
+	// Simple tab behavior: switch active button and panels
+	(function(){
+		const buttons = document.querySelectorAll('.tab-button');
+		const panels = document.querySelectorAll('.tab-panel');
+		buttons.forEach(btn=>{
+			btn.addEventListener('click',()=>{
+				buttons.forEach(b=>{b.classList.remove('active');b.setAttribute('aria-selected','false');});
+				panels.forEach(p=>{p.classList.remove('active');p.setAttribute('hidden','');});
+				btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+				const target = document.getElementById(btn.dataset.target);
+				if(target){ target.classList.add('active'); target.removeAttribute('hidden'); }
+			});
+		});
+	})();
+	</script>
+
+<footer class="contact-strip">
+	<div class="row">
+		<div style="width: 60%;">
+			<p>Liên lạc:</p>
+			<ul>
+				<li>Điện thoại: 0987654321</li>
+				<li>Website: <a href="index.html" class="link">TẾT NGUYÊN ĐÁN - TẾT CỦA ĐOÀN VIÊN</a></li>
+				<li>Tham gia & tình nguyện: <a href="dang_ki.html" class="link">Biểu mẫu đăng kí</a></li>
+			</ul>
+		</div>
+		<div style="width: 10%;"></div>
+		<div style="width: 30%;">
+		<p>Xem chi tiết:</p>
+			<ul>
+				<li><a href="the_thao.html" class="link">Hoạt động & Đoàn viên</a></li>
+				<li><a href="nghe_thuat.html" class="link">Nghệ thuật & Văn hoá</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

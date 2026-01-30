@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Đăng ký - TẾT NGUYÊN ĐÁN</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header-top">
+	<div class="header-left">
+		<!-- logo placeholder -->
+	</div>
+	<div class="header-right">
+		<nav class="nav-inline">
+			<ul>
+				<li><a href="index.html">Trang chủ</a></li>
+				<li><a href="mon_an.html">Món ăn</a></li>
+				<li><a href="truyen_thong.html">Truyền thống nổi tiếng</a></li>
+				<li><a href="dang_ki.html">Đăng ký</a></li>
+			</ul>
+		</nav>
+		<div class="site-title">TẾT NGUYÊN ĐÁN</div>
+	</div>
+</header>
+<main class="container">
+	<section class="form-card" aria-labelledby="form-title">
+		<h2 id="form-title">Đăng ký tham gia hoạt động Tết</h2>
+		<p class="muted">Vui lòng điền thông tin để đăng ký tham gia các chương trình, tình nguyện và hoạt động cộng đồng dịp Tết.</p>
+		<form action="#" method="post" enctype="multipart/form-data">
+			<div class="form-row">
+				<div>
+					<label for="hoten">Họ và tên</label>
+					<input id="hoten" name="hoten" type="text" placeholder="Nguyễn Văn A" required>
+				</div>
+				<div>
+					<label for="email">Email</label>
+					<input id="email" name="email" type="email" placeholder="you@example.com" required>
+				</div>
+			</div>
+			<div class="form-row">
+				<div>
+					<label for="ngaysinh">Ngày sinh</label>
+					<input id="ngaysinh" name="ngaysinh" type="date">
+				</div>
+				<div>
+					<label for="dk">Chọn hoạt động</label>
+					<select id="dk" name="dk" required>
+						<option value="">-- Chọn --</option>
+						<option value="thien_nguyen">Hoạt động thiện nguyện</option>
+						<option value="trochoi">Trò chơi dân gian</option>
+						<option value="bieu_dien">Biểu diễn nghệ thuật</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="full">
+					<label for="diachi">Địa chỉ</label>
+					<textarea id="diachi" name="diachi" rows="3" placeholder="Địa chỉ hiện tại"></textarea>
+				</div>
+			</div>
+			<div class="form-row">
+				<div>
+					<label>Giới tính</label>
+					<div>
+						<input id="nam" type="radio" name="gioitinh" value="nam">
+						<label for="nam">Nam</label>
+						<input id="nu" type="radio" name="gioitinh" value="nu">
+						<label for="nu">Nữ</label>
+					</div>
+				</div>
+				<div>
+					<label for="hoso">Hồ sơ/Ảnh (tuỳ chọn)</label>
+					<input id="hoso" name="hoso" type="file" accept="image/*,.pdf">
+				</div>
+			</div>
+			<div style="margin-top:.8rem">
+				<button class="btn" type="submit">Gửi đăng ký</button>
+				<a href="index.html" style="margin-left:1rem; color:var(--tet-red);">Hủy & về trang chủ</a>
+			</div>
+		</form>
+	</section>
+</main>
+</body>
+</html>
+</body>
+</html>
